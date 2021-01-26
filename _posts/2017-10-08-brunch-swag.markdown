@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: compress
 title: "Brunch Swag"
 date: 2017-10-08
 description: 

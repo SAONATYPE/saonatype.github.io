@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: home
 title: "Lumbersexual"
 date: 2017-10-09
 description: 
