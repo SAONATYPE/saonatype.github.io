@@ -362,12 +362,12 @@ body {
 .contain-to-grid {
   background-color:whitesmoke;
   position: fixed;
-  padding: 2%;
+  padding: 20px 20px;
   transition: 0.4s;
   top: 0;
   z-index: 99; }
   .contain-to-grid .top-bar {
-    background-color:whitesmoke;
+  background-color:whitesmoke;
     max-width: 100%; }
 
 .top-bar-section ul li > a {
