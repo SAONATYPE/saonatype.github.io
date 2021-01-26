@@ -1,23 +1,33 @@
 - name: Home
-  path: index.html
+  path: ""
   section_id: home
-- name: Featured Projects
-  section_id: projects
+
+- name: Blogs
+  path: blog
+  section_id: blog
+  
+- name: Works
+  section_id: works
   children:
-    - name: Tech for Social Justice
-      path: t4sj.html
-    - name: Virtual Identities in CS Education
-      path: stem-c.html
-    - name: Boston Civic Media
-      path: bostoncivicmedia.html
-    - name: Vida Verde
-      path: vida-verde-2.html
-    - name: Black Citizenship Project
-      path: isaniggaacitizen.html
-    - name: DiscoTech
-      path: discotech.html
-    - name: DecisionLoop
-      path: decisionloop.html
-- name: CV [PDF]
-  path: Resume.pdf
-  section_id: resume
+    - name: Poetfolio style 1
+      path: portfolio
+    - name: Poetfolio style 2
+      path: portfolio-2
+    - name: Poetfolio style 3
+      path: portfolio-item
+    - name: Poetfolio style 4
+      path: portfolio-item-2
+      
+- name: Pages
+  section_id: pages
+  children:
+    - name: About
+      path: about
+    - name: Services
+      path: services
+    - name: Services 2
+      path: services-2
+
+- name: Contact
+  path: contact
+  section_id: contact
