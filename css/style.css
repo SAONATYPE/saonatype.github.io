@@ -361,7 +361,10 @@ body {
 
 .contain-to-grid {
   background: transparent;
-  position: absolute;
+  position: fixed;
+  padding: 20px 20px;
+  transition: 0.4s;
+  top: 0;
   z-index: 99; }
   .contain-to-grid .top-bar {
     background: transparent;
