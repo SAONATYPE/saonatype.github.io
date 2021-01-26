@@ -2,16 +2,16 @@
 layout: default
 section_id: home
 slides:
-- title: User experience design, research, curriculum co-creation
-  tagline: type
-  link_to: vida-verde-2.html
-  background: images/vv-user-research.png
-
 - layout: default
   title: User experience design, research, curriculum co-creation
   tagline: 
+  link_to: vida-verde-2.html
+  image: images/vv-user-research.png
+  background: images/green-zig-zagz.png
+- layout: default
+  title: Second Project
+  tagline: 
   background: images/blue-zig-zagz.png
-
 works_left:
 - title: Vida Verde Women's Cooperative
   link_to: vida-verde-2.html
@@ -57,10 +57,12 @@ works_right:
             <div class="row">
               <div class="large-10 large-centered columns">
                 {% if slide.layout == 'default' %}
+                 <a href="{{slide.link_to}}" class="slide">
                   <div class="image-wrapper" style="background-image: url({{site.url}}/{{slide.image}});"></div>
                   <div class="two spacing"></div>
                   <h1>{{slide.title}}</h1>
                   <p>{{slide.tagline}}</p>
+                  </a>      
                 {% else %}
                   <div class="image-wrapper" style="background-image: url({{site.url}}/{{slide.image_top}});"></div>
                   <div class="image-wrapper arrows" style="background-image: url({{site.url}}/{{slide.image_bottom}});"></div>
@@ -80,6 +82,7 @@ works_right:
     </nav>
   </div>
 </div>
+
 
 <div class="full centered-text light-grey">
   <div class="section-title small">
