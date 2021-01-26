@@ -360,14 +360,17 @@ body {
   padding-top: 0 !important; }
 
 .contain-to-grid {
-  background-color:whitesmoke;
+  background-color:#ffffff;
+    box-sizing: border-box;
+    border-bottom: 1px solid #ddd;
+    height: 70px;
   position: fixed;
   padding: 2%;
-  transition: 0.4s;
+  transition: top 0.25s;
   top: 0;
   z-index: 99; }
   .contain-to-grid .top-bar {
-    background-color:whitesmoke;
+    background-color:#ffffff;
     max-width: 100%; }
 
 .top-bar-section ul li > a {
