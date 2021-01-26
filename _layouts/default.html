@@ -1,24 +1,17 @@
----
-layout: default
----
 <!DOCTYPE html>
-<html lang="en">
-<head>
+<html>
 
   {% include head.html %}
 
-</head>
-<body id="{% if page.title %}{{ page.title | slugify }}{% else %}home{% endif %}" class="{{ page.layout | downcase }}-layout">
-  
-  {% include header.html %}
+  <body>
 
-  <main class="💈">
+    {% include header.html %}
+
 
     {{ content }}
-    
-  </main>
 
-  {% include footer.html %}
+    {% include footer.html %}
 
-</body>
+  </body>
+
 </html>

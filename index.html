@@ -1,21 +1,140 @@
 ---
 layout: default
-pagination:
-  enabled: true
+section_id: home
+slides:
+- layout: default
+  title: User experience design, research, curriculum co-creation
+  tagline: 
+  background: images/green-zig-zagz.png
+- layout: default
+  title: User experience design, research, curriculum co-creation
+  tagline: 
+  background: images/blue-zig-zagz.png
+works_left:
+- title: Vida Verde Women's Cooperative
+  link_to: vida-verde-2.html
+  image: images/vv-user-research.png
+  categories: User Research, Codesign, User Experience Design
+- title: DecisionLoop
+  link_to: decisionloop.html
+  image: images/decisionloop-screen4-crop.png
+  categories: User Experience Design
+- title: CloudOn
+  link_to: cloudon.html
+  image: images/cloudon-phone-comments-screens6-crop.png
+  categories: User Experience Design
+- title: "Using Virtual Identities in Computer Science Learning for Broadening Participation"
+  link_to: stem-c.html
+  image: images/stem-c-pilot-1.jpg
+  categories: Curriculum Design, Research
+works_right:
+- title: Technology for Social Justice Field Scan
+  link_to: t4sj.html
+  image: images/t4sj-orglist.png
+  categories: Research, Web Development
+- title: Boston Civic Media, Metrics and Methods
+  link_to: bostoncivicmedia.html
+  image: images/bcm-1.png
+  categories: Event Planning, Print Design
+- title: Is a Nigga a Citizen?
+  link_to: isaniggaacitizen.html
+  image: images/isaniggaacitizen-3.jpg
+  categories: Print
+- title: DiscoTech Demystifying Prototyping
+  link_to: discotech.html
+  image: images/discotech-flyer.png
+  categories: Event planning, Print
 ---
-<!-- The main content area -->
-<div class="posts">
-  <div class="grid-xlarge">
-    <div class="posts__container" itemscope itemtype="http://schema.org/Blog" data-columns>
 
-      {% for post in paginator.posts %}
-
-        <!-- The tag below includes the markup for each post - partials/post-card.html -->
-        {% include post-card.html %}
-
+<!-- <div class="full no-padding">
+  <div id="slides" class="fullscreen">
+    <div class="slides-container">
+      {% for slide in page.slides %}
+        <div class="slide" style="background-image: url({{site.url}}/{{slide.background}}); background-repeat: repeat; background-size:auto;">
+          <div class="slide-info">
+            <div class="row">
+              <div class="large-10 large-centered columns">
+                {% if slide.layout == 'default' %}
+                  <div class="image-wrapper" style="background-image: url({{site.url}}/{{slide.image}});"></div>
+                  <div class="two spacing"></div>
+                  <h1>{{slide.title}}</h1>
+                  <p>{{slide.tagline}}</p>
+                {% else %}
+                  <div class="image-wrapper" style="background-image: url({{site.url}}/{{slide.image_top}});"></div>
+                  <div class="image-wrapper arrows" style="background-image: url({{site.url}}/{{slide.image_bottom}});"></div>
+                  <div class="three spacing"></div>
+                  <h1>{{slide.title}}</h1>
+                {% endif %}
+              </div>
+            </div>
+          </div> -->
+          <!-- <img src="{{site.url}}/{{slide.background}}" alt=""> -->
+       <!--  </div>
       {% endfor %}
     </div>
+    <nav class="slides-navigation">
+      <a href="#" class="next"><i class="icon-arrows-slim-right"></i></a>
+      <a href="#" class="prev"><i class="icon-arrows-slim-left"></i></a>
+    </nav>
   </div>
+</div>  -->
 
-  {% include pagination.html %}
+<div class="full centered-text light-grey">
+  <div class="section-title small">
+    <div class="row">
+<!--       <div class="medium-10 medium-centered columns">
+
+        <div class="spacing"></div>
+        <h2>About Me</h2>
+      </div> -->
+    </div>
+  </div>
+  <div class="row">
+    <div class="large-10 large-centered columns">
+      <p class="big-text">
+        Maya Wagoner is a user experience designer, researcher, organizer, and curriculum co-creator, currently serving as a <a href="https://advocacy.mozilla.org/en-US/open-web-fellows/overview">Ford-Mozilla Open Web Fellow</a> at the <a href="https://www.bklynlibrary.org/">Brooklyn Public Library.</a>
+      </p>
+    </div>
+  </div>
+</div>
+<div class="full">
+  <div class="section-title">
+    <div class="row">
+      <div class="medium-10 medium-centered columns">
+        <h2>Projects</h2>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="large-6 columns">
+      <div class="gallery-left-section">
+        {% for work in page.works_left %}
+          <div class="work-wrapper">
+            <a href="{{work.link_to}}" class="work">
+              <img src="{{site.url}}/{{work.image}}" alt="">
+              <div class="info">
+                <h3>{{work.title}}</h3>
+                <p>{{work.categories}}</p>
+              </div>
+            </a>
+          </div>
+        {% endfor %}
+      </div>
+    </div>
+    <div class="large-6 columns">
+      <div class="gallery-right-section">
+        {% for work in page.works_right %}
+          <div class="work-wrapper">
+            <a href="{{work.link_to}}" class="work">
+              <img src="{{site.url}}/{{work.image}}" alt="">
+              <div class="info">
+                <h3>{{work.title}}</h3>
+                <p>{{work.categories}}</p>
+              </div>
+            </a>
+          </div>
+        {% endfor %}
+      </div>
+    </div>
+  </div>
 </div>
