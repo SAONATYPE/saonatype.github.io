@@ -56,7 +56,9 @@ works_right:
 
 <div class="full no-padding">
   <div id="slides" class="fullscreen">
-    <div class="slides-container" style="margin-top: 80px;padding: 0px;list-style: none;position: relative;height: 90%;display: block;">
+      <div class="slides-control" style="position: relative; height: 100%; width: 1349px; left: -1349px;">
+
+    <div class="slides-container" >
       {% for slide in page.slides %}
         <div class="slide" style="background-image: url({{site.url}}/{{slide.background}}); background-repeat: repeat; background-size:auto;">
           <div class="slide-info">
