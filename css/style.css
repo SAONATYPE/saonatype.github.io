@@ -56,14 +56,6 @@
 .full.light-cyan {
   background: #dae9ec; }
 
-.full.light-teal {
-  background: #63cba8;
-}
-
-.full-bright-light-blue {
-  background: #4abac3;
-}
-
 .full.grey {
   background: #edebe7; }
 
@@ -108,7 +100,7 @@
   background: rgba(34, 34, 34, 0.85); }
 
 .no-padding {
-  padding: 0; }
+  padding-top: 70px; }
 
 .no-overflow {
   overflow: hidden; }
@@ -360,20 +352,12 @@ body {
   padding-top: 0 !important; }
 
 .contain-to-grid {
-  background-color:whitesmoke;
+  background: white;
   position: fixed;
-  transition: 0.4s;
-  top: 0;
-  z-index: 99; 
-  margin-top: -0.5em;
-    width: 100%;
-    height: 80px
-}
+  z-index: 99; }
   .contain-to-grid .top-bar {
-  background-color:transparent;
-    width: 100%; 
-    height: 80px;
-}
+    background: transparent;
+    max-width: 100%; }
 
 .top-bar-section ul li > a {
   font-family: "josefin sans";
