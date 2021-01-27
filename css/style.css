@@ -357,7 +357,7 @@ body {
   z-index: 99; }
   .contain-to-grid .top-bar {
     background: transparent;
-    max-width: 100%; }
+    max-width: 96%; }
 
 .top-bar-section ul li > a {
   font-family: "josefin sans";
