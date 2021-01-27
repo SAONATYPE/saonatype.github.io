@@ -4201,7 +4201,9 @@ meta.foundation-mq-topbar {
   position: relative; }
   .top-bar ul {
     list-style: none;
-    margin-bottom: 0; }
+    margin-bottom: 0; 
+    padding-left: 10px;
+    }
   .top-bar .row {
     max-width: none; }
   .top-bar form, .top-bar input, .top-bar select {
