@@ -126,8 +126,9 @@ works_right:
       </div>
     </div>
   </div>
+    
   <div class="row">
-    <div class="large-6 columns">
+    <div class="large-5 columns">
       <div class="gallery-left-section">
         {% for work in page.works_left %}
           <div class="work-wrapper">
@@ -159,38 +160,3 @@ works_right:
     </div>
   </div>
 </div>
-
-
-
-
-
-<div class="full">         <h2>Recent Posts</h2>     
-  <div class="row">
-    <div class="large-4 columns">
-        {{content}}
-      {% if paginator %}
-        <div class="pager">
-          {% if paginator.next_page %}
-            {% if paginator.next_page == 1 %}
-              <a href="/blog" class="older">Older Entries <i class="fa fa-angle-double-right"></i></a>
-            {% else %}
-              <a href="/blog/page{{ paginator.next_page }}" class="older">Older Entries <i class="fa fa-angle-double-right"></i></a>
-            {% endif %}
-          {% else %}
-            <!-- <span class="older">Older Entries</span> -->
-          {% endif %}
-          {% if paginator.previous_page %}
-            {% if paginator.previous_page == 1 %}
-              <a href="/blog" class="newer"><i class="fa fa-angle-double-left"></i> Newer Entries</a>
-            {% else %}
-              <a href="/blog/page{{ paginator.previous_page }}" class="newer"><i class="fa fa-angle-double-left"></i>Newer Entries</a>
-            {% endif %}
-          {% else %}
-            <!-- <span class="newer">Newer Entries</span> -->
-          {% endif %}
-        </div>
-      {% endif %}
-    </div>
-  </div>
-</div>
-
