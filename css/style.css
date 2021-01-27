@@ -329,7 +329,8 @@ body {
     transform: translateX(0); } }
 /* Navigation */
 .title-area h1 {
-  padding-left: 20px; }
+  line-height: 1;
+  padding-left: 15px; }
   .title-area h1 a {
     color: #333;
     font-size: 18px;
@@ -366,12 +367,8 @@ body {
   top: 0;
   z-index: 99; }
   .contain-to-grid .top-bar {
-  background-color:whitesmoke;
-  width: 100%; 
-  height: 80px;
-  padding-left: 20px;
-  padding-right: 20px;
-}
+  background-color:transparent;
+    max-width: 100%; }
 
 .top-bar-section ul li > a {
   font-family: "josefin sans";
